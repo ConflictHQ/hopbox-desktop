@@ -1,0 +1,28 @@
+[package]
+name = "hopbox-desktop"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+description = "hopbox terminal multiplexer — AI copilot for your terminal"
+repository = "https://github.com/ConflictHQ/hopbox-desktop"
+
+[[bin]]
+name = "hopbox"
+path = "src/main.rs"
+
+[dependencies]
+hopbox-core = { git = "https://github.com/ConflictHQ/hopbox-core" }
+ratatui = "0.29"
+crossterm = "0.28"
+tokio = { version = "1", features = ["full"] }
+tokio-tungstenite = { version = "0.24", features = ["rustls-tls-webpki-roots"] }
+rustls = "0.23"
+serde = { version = "1", features = ["derive"] }
+toml = "0.8"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+anyhow = "1"
+dirs = "5"
+
+[dev-dependencies]
+tokio-test = "0.4"
