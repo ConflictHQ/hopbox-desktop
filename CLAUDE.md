@@ -24,7 +24,7 @@ Parallel PTY tests fight over PTY allocation and you get heisen-failures. Apply 
 
 - Use `ragelink` / `Leo Mata <lmata@weareconflict.com>` for commits in this repo.
 - Set per-repo, never globally.
-- This is a Conflict / personal-adjacent repo, not a work (steadymd) repo — don't cross identities.
+- This is a Conflict / personal-adjacent repo, not a work repo; don't cross identities.
 
 ## License
 
